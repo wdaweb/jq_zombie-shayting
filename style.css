@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "zpix";
+  src: url("./font/zpix.ttf");
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* font-family: "Press Start 2P", cursive; */
+  font-family: "Press Start 2P", "zpix";
+}
+
+#game {
+  background: url("./img/bg01.jpg") no-repeat 100% / cover;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: url(./img/cursor.png) 50 50, auto;
+  transition: background 2s;
+}
+
+#game img {
+  position: absolute;
+  user-select: none;
+  width: 140px;
+}
+
+#target {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 4px solid #fff;
+}
+
+#target img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+#timebar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#btnStart {
+  font-size: 20px;
+  padding: 10px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.txt {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-left: 10px;
+}

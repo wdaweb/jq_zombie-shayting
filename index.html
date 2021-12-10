@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- nes.css -->
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- style.css -->
+  <link rel="stylesheet" href="./style.css">
+  <title>PIKACHU CATCH</title>
+</head>
+
+<body>
+  <div id="game">
+    <div class="txt">
+      <div id="scoreBox">Score:<span id="score">0</span>pts</div>
+      <div id="timeBox">Time Left:<span id="time">60</span>s</div>
+      <div>Highest Score:<span id="highestScore">0</span></div>
+      <div>Best Player:<span id="bestPlayer">???</span></div>
+    </div>
+    <progress id="timebar" class="nes-progress is-primary" value="60" max="60" style="width: 50%;"></progress>
+    <div id="target">
+      <img src="./img/ready.gif" alt="">
+    </div>
+    <input type="button" id="btnStart" value="Start" class="nes-btn is-primary">
+  </div>
+
+  <!-- jQuery -->
+  <script src="./jquery-3.6.0.min.js"></script>
+  <!-- sweetalert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- app.js -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
